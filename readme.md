@@ -1,10 +1,6 @@
-Unit Test Dev Meeting
+Code Coverage Dev Meeting
 ---------------------
 
-A series of articles on TDD & unit tests. Each folder has it own readme file.
+An article and examples for code coverage implemntation (Ruby + Javascript)
 
 additional readings
-
-http://betterspecs.org/
-
-http://blog.teamtreehouse.com/an-introduction-to-rspec
