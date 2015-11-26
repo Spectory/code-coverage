@@ -1,4 +1,3 @@
-
 Rails simplecov setup implementation
 -------------------------------
 
@@ -30,4 +29,41 @@ And there we have it. In order to run the specs with coverage, simply use the ne
 
 ```ruby
   COVERAGE=true rspec
+```
+
+xit and xdescribe tags
+----------------------------
+we can use 'x' tag to skip particular tests.
+
+
+skip a single spec:
+```ruby
+xit 'should return true' do
+  expect(true).to be true
+end
+```
+
+skip a block of tets:
+```ruby
+xdescribe 'some tests'
+  it 'should return true' do
+    expect(true).to be true
+  end
+
+  it 'should return false' do
+    expect(true).to be false
+  end
+end
+```
+
+nocov tag
+-----------------------------
+we can use :nocov: tag in order the exculde some parts of our code in the coverage report:
+
+```ruby
+:nocov:
+def add (a, b)
+  a + b
+end
+:nocov:
 ```
