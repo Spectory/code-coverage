@@ -10,7 +10,7 @@ We add the rspec-rails and simplecov gems to the gemfile
   gem 'rspec-rails'
   gem 'simplecov'
 ```
-After bundling, run the following command in order create the RSpec testing enironment:
+After bundling, run the following command in order generate spec_helper.rb and rails_helper.rb:
 
 ```ruby
   rails generate rspec:install
