@@ -66,9 +66,11 @@ and supply the location for the coverage report:
 
 we wish to install the plugins as well:
 
-npm i karma-jasmine --save-dev
-npm i karma-coverage --save-dev
-npm i karma-phantomjs2-launcher --save-dev
+```javaScript
+  npm i karma-jasmine --save-dev
+  npm i karma-coverage --save-dev
+  npm i karma-phantomjs2-launcher --save-dev
+```
 
 and you should be good to go!
 
