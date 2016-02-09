@@ -127,7 +127,7 @@ we would also add the plugins propery:
     'karma-coverage',
     'karma-phantomjs2-launcher'
   ],
-```javaScript
+```
 
 and supply the location for the coverage report:
 
