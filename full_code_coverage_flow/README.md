@@ -46,7 +46,7 @@ xit 'should return true' do
 end
 ```
 
-skip a block of tets:
+skip a block of specs:
 ```ruby
 xdescribe 'some tests'
   it 'should return true' do
@@ -151,14 +151,14 @@ xit and xdescribe tags
 we can use 'x' tag to skip particular tests.
 
 
-skip a single spec:
+skip a single test:
 ```javaScript
 xit 'should return true' do
   expect(true).to be true
 end
 ```
 
-skip a block of tets:
+skip a block of tests:
 ```javaScript
 xdescribe('some tests', function () {
   it('should return true', function(){

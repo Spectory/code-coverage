@@ -43,7 +43,7 @@ xit 'should return true' do
 end
 ```
 
-skip a block of tets:
+skip a block of specs:
 ```ruby
 xdescribe 'some tests'
   it 'should return true' do
