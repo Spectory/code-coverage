@@ -72,8 +72,14 @@ end
 ```
 
 
-Karma with code coverage setup implementation
----------------------------------------------------
+Karma with code coverage setup implementation (PhantomJS 2.0)
+-------------------------------------------------------------
+
+Install phantomjs2:
+
+```javaScript
+  npm install phantomjs2
+```
 
 In order to implement JS testing enivronment using Karma, follow the next steps.
 First, run following command in order to generate karma.conf file:
@@ -112,6 +118,33 @@ and update of the reporter:
 ```javaScript
   reporters: ['progress', 'coverage'],
 ```
+
+we would also add the plugins propery:
+
+```javaScript
+  plugins: [
+    'karma-jasmine',
+    'karma-coverage',
+    'karma-phantomjs2-launcher'
+  ],
+```javaScript
+
+and supply the location for the coverage report:
+
+```javaScript
+    coverageReporter: {
+      type: 'html',
+      dir: 'coverage/karma/'
+    },
+```javaScript
+
+we wish to install the plugins as well:
+
+npm i karma-jasmine --save-dev
+npm i karma-coverage --save-dev
+npm i karma-phantomjs2-launcher --save-dev
+
+and you should be good to go!
 
 xit and xdescribe tags
 ----------------------------

@@ -37,11 +37,22 @@ module.exports = function (config) {
 
     colors: true,
 
+    plugins: [
+      'karma-jasmine',
+      'karma-coverage',
+      'karma-phantomjs2-launcher'
+    ],
+
     logLevel: config.LOG_INFO,
 
     autoWatch: true,
 
-    browsers: ['PhantomJS'],
+    browsers: ['PhantomJS2'],
+
+    coverageReporter: {
+      type: 'html',
+      dir: 'coverage/karma/'
+    },
 
     singleRun: false
   });
